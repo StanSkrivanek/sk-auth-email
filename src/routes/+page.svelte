@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	//  import { supabase } from '$lib/supabaseClient'
+	 import { supabaseClient } from '$lib/db'
 	// import Account from './Account.svelte';
 	// import Auth from './Auth.svelte';
 	export let data;
@@ -31,12 +31,12 @@
 					<!-- svelte-ignore a11y-label-has-associated-control -->
 					<label tabindex="0" class="btn btn-ghost btn-circle avatar">
 						<div class="w-10 rounded-full">
-							<img
+							<!-- <img
 								src={data.user?.avatar
 									? getImageURL(data.user?.collectionId, data.user?.id, data.user?.avatar)
 									: `https://ui-avatars.com/api/?name=${data.user?.name}`}
 								alt="User avatar"
-							/>
+							/> -->
 						</div>
 					</label>
 					<!-- svelte-ignore a11y-no-noninteractive-tabindex -->

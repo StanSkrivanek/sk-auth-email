@@ -1,4 +1,17 @@
-<script>
+<script lang="ts">
+
+// interface FormInput {
+// 	value: string;
+// 	placeholder: string;
+// 	id: string;
+// 	label: string;
+// 	type: string;
+// 	disabled: boolean;
+// 	required: boolean;
+// 	errors: string[];
+// }
+
+
 	export let value = '';
 	export let placeholder = '';
 	export let id;
@@ -6,7 +19,6 @@
 	export let type = 'text';
 	export let disabled = false;
 	export let required = false;
-
 	export let errors;
 </script>
 

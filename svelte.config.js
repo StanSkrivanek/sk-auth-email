@@ -18,11 +18,11 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		alias: {
-			$components: './src/components',
+			$components: './src/lib/components',
 			$lib: './src/lib',
-			$stores: './src/stores',
+			// $stores: './src/stores',
 			$routes: './src/routes',
-			$utils: './src/utils'
+			// $utils: './src/utils'
 		},
 	}
 };

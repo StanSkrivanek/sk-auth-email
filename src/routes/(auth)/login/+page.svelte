@@ -1,6 +1,6 @@
 <script>
 	import { enhance } from '$app/forms';
-	import { Input } from '$components';
+	import  Input  from '$components/Input.svelte';
 	// import toast from 'svelte-french-toast';
 	export let form;
 	let loading = false;
