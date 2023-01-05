@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
 	import  Input  from '$components/Input.svelte';
-	export let form;
+	export let form: any;
 </script>
 
 <div class="flex flex-col items-center h-full w-full">

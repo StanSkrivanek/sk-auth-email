@@ -1,9 +1,11 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/stores';
-	 import { supabaseClient } from '$lib/db'
+	import type { PageData } from './$types';
+	// import { supabaseClient } from '$lib/db';
 	// import Account from './Account.svelte';
 	// import Auth from './Auth.svelte';
-	export let data;
+
+	export let data: PageData;
 </script>
 
 <svelte:head>
@@ -17,7 +19,7 @@
 			<a href="/" class="btn btn-ghost normal-case text-xl">Showcase</a>
 		</div>
 		<div class="flex-none">
-			{#if !data.user}
+			{#if !data.session}
 				<div class="dropdown dropdown-end">
 					<a href="/login" class="btn btn-primary">Login</a>
 					<a href="/register" class="btn btn-secondary">Register</a>
@@ -37,6 +39,7 @@
 									: `https://ui-avatars.com/api/?name=${data.user?.name}`}
 								alt="User avatar"
 							/> -->
+							<img src="" alt="" srcset="" class="bg-slate-100">
 						</div>
 					</label>
 					<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
@@ -64,9 +67,6 @@
 		</div>
 	</div>
 </div>
-
-
-
 
 <!-- <div class="navbar bg-base-100">
   <div class="flex-1">

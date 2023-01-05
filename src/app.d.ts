@@ -9,7 +9,10 @@ declare namespace App {
 		SchemaName: 'public';
 	}
 
-	// interface Locals {}
+	interface Locals {
+		sb: TypedSupabaseClient;
+		session: Session | null;
+	}
 	interface PageData {
 		session: import('@supabase/auth-helpers-sveltekit').SupabaseSession;
 	}
