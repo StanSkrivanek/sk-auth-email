@@ -14,12 +14,12 @@
 
 	export let value = '';
 	export let placeholder = '';
-	export let id;
-	export let label;
+	export let id = '';
+	export let label = '';
 	export let type = 'text';
 	export let disabled = false;
 	export let required = false;
-	export let errors;
+	export let errors = "";
 </script>
 
 <div class="form-control w-full max-w-lg mb-2">

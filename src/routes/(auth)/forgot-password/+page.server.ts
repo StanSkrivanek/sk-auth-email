@@ -3,13 +3,15 @@ import { fail, redirect } from '@sveltejs/kit';
 import type { Actions } from './$types';
 
 export const actions: Actions = {
-	login: async ({ request, locals }) => {
-		const body = Object.fromEntries(await request.formData());
+	forgotEmail: async ({ request, locals}) => {
+		const data = await request.formData();
+		const email = data.get('email');
+		const { err } = await locals.sb.auth.resetPasswordForEmail(email , {
+			redirectTo: 'http://localhost:5173/reset-password'
+		}
+		);
 
-		const { error: err } = await locals.sb.auth.signInWithPassword({
-			email: body.email as string,
-			password: body.password as string
-		});
+		// TODO handle error if user email doesn't exist in db
 
 		if (err) {
 			if (err instanceof AuthApiError && err.status === 400) {
@@ -22,6 +24,6 @@ export const actions: Actions = {
 			});
 		}
 
-		throw redirect(303, '/');
+		// throw redirect(303, '/');
 	}
 };

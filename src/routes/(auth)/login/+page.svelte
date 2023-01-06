@@ -13,11 +13,11 @@
 					await update();
 					break;
 				case 'invalid':
-					toast.error('Invalid credentials');
+					// toast.error('Invalid credentials');
 					await update();
 					break;
 				case 'error':
-					toast.error(result.error.message);
+					// toast.error(result.error.message);
 					break;
 				default:
 					await update();
@@ -59,7 +59,7 @@
 		/>
 		<div class="w-full max-w-lg">
 			<a
-				href="/reset-password"
+				href="/forgot-password"
 				class="font-medium text-primary hover:cursor-pointer hover:underline"
 			>
 				Forgot Password?</a
