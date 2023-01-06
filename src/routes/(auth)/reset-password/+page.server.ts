@@ -20,10 +20,7 @@ export const actions: Actions = {
 		}
 
 		const { err } = await locals.sb.auth.updateUser(
-			{ password: password },
-			{
-				redirectTo: 'http://localhost:5173/login'
-			}
+			{ password: password }
 		);
 
 		// TODO handle error if user email doesn't exist in db
@@ -39,6 +36,6 @@ export const actions: Actions = {
 			});
 		}
 
-		// throw redirect(303, '/');
+		throw redirect(303, '/login');
 	}
 };
