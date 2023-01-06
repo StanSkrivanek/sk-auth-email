@@ -36,7 +36,7 @@
 				>Get a new password</button
 			>
 		</div>
-		{#if form?.notVerified}
+		<!-- {#if form?.notVerified}
 			<div class="alert alert-error shadow-lg w-full max-w-lg">
 				<div>
 					<svg
@@ -54,7 +54,7 @@
 					<span>You must verify your email before you can login.</span>
 				</div>
 			</div>
-		{/if}
+		{/if} -->
 	</form>
     <!-- <pre>
         {JSON.stringify( form, null, 2)}

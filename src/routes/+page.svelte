@@ -48,9 +48,9 @@
 						class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
 					>
 						<li>
-							<a href="/my/projects" class="justify-between">My Projects</a>
+							<a href="/projects" class="justify-between">My Projects</a>
 						</li>
-						<li><a href="/my/settings">Settings</a></li>
+						<li><a href="/settings">Settings</a></li>
 						<li>
 							<form action="/logout" method="POST">
 								<button type="submit" class="w-full text-start">Logout</button>

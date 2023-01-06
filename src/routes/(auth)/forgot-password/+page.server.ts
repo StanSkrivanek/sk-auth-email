@@ -7,10 +7,12 @@ export const actions: Actions = {
 		const data = await request.formData();
 		const email = data.get('email');
 		const { err } = await locals.sb.auth.resetPasswordForEmail(email , {
+			// TODO: change this to the correct url
+			// link in email will redirect to this url
 			redirectTo: 'http://localhost:5173/reset-password'
 		}
 		);
-
+		
 		// TODO handle error if user email doesn't exist in db
 
 		if (err) {
