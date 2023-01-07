@@ -20,5 +20,7 @@
 	export let data: PageData;
 
 </script>
+
+
 <MainNavbar {data}/>
 <slot />

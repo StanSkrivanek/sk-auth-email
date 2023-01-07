@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-	<title>Supabase + SvelteKit</title>
+	<title>Home</title>
 	<meta name="description" content="SvelteKit using supabase-js v2" />
 </svelte:head>
 

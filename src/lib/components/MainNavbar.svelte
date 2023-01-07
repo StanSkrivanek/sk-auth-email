@@ -1,18 +1,8 @@
-<script lang='ts'>
-	// import { PageData } from './$types';
-	// import type { PageData } from './$types';
-	// export let data: any;
+<script lang="ts">
+	export let data: any;
 
-//   import type { PageData } from './$types';
-
-  export let data: any ;
-  console.log("DATA mainnav", data);
-  // import { supabaseClient } from '$lib/db';
-//   let data = {
-//     session: null,
-//     user: null
-//   };
-
+	console.log('data:SESSION: MainNavbar', data?.session);
+	console.log('data: USER: MainNavbar', data?.session?.user);
 </script>
 
 <div class="min-h-full">
@@ -41,7 +31,7 @@
 									: `https://ui-avatars.com/api/?name=${data.user?.name}`}
 								alt="User avatar"
 							/> -->
-							<img src="" alt="" srcset="" class="bg-slate-100">
+							<img src="" alt="" srcset="" class="bg-slate-100" />
 						</div>
 					</label>
 					<!-- svelte-ignore a11y-no-noninteractive-tabindex -->

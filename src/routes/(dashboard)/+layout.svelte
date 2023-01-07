@@ -16,5 +16,7 @@
 		};
 	});
 </script>
-
+<svelte:head>
+  <title>my settings</title>
+</svelte:head>
 <slot />
