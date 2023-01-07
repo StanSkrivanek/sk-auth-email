@@ -1,8 +1,8 @@
 <script lang="ts">
 	export let data: any;
 
-	console.log('data:SESSION: MainNavbar', data?.session);
-	console.log('data: USER: MainNavbar', data?.session?.user);
+	// console.log('data:SESSION: MainNavbar', data?.session);
+	// console.log('data: USER: MainNavbar', data?.session?.user);
 </script>
 
 <div class="min-h-full">
