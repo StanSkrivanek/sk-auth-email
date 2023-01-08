@@ -11,11 +11,10 @@ datasource db {
 }
 
 model User {
-  id       String   @id @default(uuid())
-  name     String
-  email    String   @unique
-  password String
-  profile  Profile?
+  id      String   @id @default(uuid())
+  name    String
+  email   String   @unique
+  profile Profile?
 }
 
 model Profile {
